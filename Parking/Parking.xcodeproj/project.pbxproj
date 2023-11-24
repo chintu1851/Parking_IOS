@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DC1A80829D54A63007F39D2 /* UserParkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1A80729D54A63007F39D2 /* UserParkings.swift */; };
+		9DC1A80A29D54A8F007F39D2 /* FireDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1A80929D54A8F007F39D2 /* FireDBHelper.swift */; };
+		9DC1A80C29D54ABA007F39D2 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1A80B29D54ABA007F39D2 /* Parking.swift */; };
+		9DC74A9C29D4A90B008BF5F6 /* FireAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC74A9B29D4A90B008BF5F6 /* FireAuthHelper.swift */; };
+		9DC74A9E29D4A945008BF5F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC74A9D29D4A945008BF5F6 /* ContentView.swift */; };
+		9DC74AA029D4AA27008BF5F6 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC74A9F29D4AA27008BF5F6 /* Signup.swift */; };
+		9DC74AA229D4AAEE008BF5F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DC74AA129D4AAEE008BF5F6 /* GoogleService-Info.plist */; };
+		9DC74AA429D4C7F1008BF5F6 /* Detailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC74AA329D4C7F1008BF5F6 /* Detailview.swift */; };
+		E838B01E29D0021F00D900BF /* ParkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B01D29D0021F00D900BF /* ParkingApp.swift */; };
+		E838B02029D0021F00D900BF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B01F29D0021F00D900BF /* Home.swift */; };
+		E838B02229D0022000D900BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E838B02129D0022000D900BF /* Assets.xcassets */; };
+		E838B02529D0022000D900BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E838B02429D0022000D900BF /* Preview Assets.xcassets */; };
+		E838B03129D0085A00D900BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E838B03029D0085A00D900BF /* FirebaseAuth */; };
+		E838B03329D0085A00D900BF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E838B03229D0085A00D900BF /* FirebaseDatabase */; };
+		E838B03529D0085A00D900BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E838B03429D0085A00D900BF /* FirebaseFirestore */; };
+		E838B03729D0085A00D900BF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E838B03629D0085A00D900BF /* FirebaseFirestoreSwift */; };
+		E838B03B29D00BD300D900BF /* ParkingSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B03A29D00BD300D900BF /* ParkingSlot.swift */; };
+		E838B03F29D015AB00D900BF /* ParkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B03E29D015AB00D900BF /* ParkingHelper.swift */; };
+		E838B04129D02C4000D900BF /* SlotLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B04029D02C4000D900BF /* SlotLocation.swift */; };
+		E85706A629D0B9DF00837B88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85706A529D0B9DF00837B88 /* MapView.swift */; };
+		E85706A829D0BB6600837B88 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85706A729D0BB6600837B88 /* FirstScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D2D9BE029D61AA5006B78F2 /* Watchos Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watchos Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC1A80729D54A63007F39D2 /* UserParkings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParkings.swift; sourceTree = "<group>"; };
+		9DC1A80929D54A8F007F39D2 /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
+		9DC1A80B29D54ABA007F39D2 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		9DC74A9B29D4A90B008BF5F6 /* FireAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireAuthHelper.swift; sourceTree = "<group>"; };
+		9DC74A9D29D4A945008BF5F6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9DC74A9F29D4AA27008BF5F6 /* Signup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		9DC74AA129D4AAEE008BF5F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9DC74AA329D4C7F1008BF5F6 /* Detailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detailview.swift; sourceTree = "<group>"; };
+		E838B01A29D0021F00D900BF /* Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E838B01D29D0021F00D900BF /* ParkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingApp.swift; sourceTree = "<group>"; };
+		E838B01F29D0021F00D900BF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E838B02129D0022000D900BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E838B02429D0022000D900BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E838B03A29D00BD300D900BF /* ParkingSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlot.swift; sourceTree = "<group>"; };
+		E838B03E29D015AB00D900BF /* ParkingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHelper.swift; sourceTree = "<group>"; };
+		E838B04029D02C4000D900BF /* SlotLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotLocation.swift; sourceTree = "<group>"; };
+		E85706A529D0B9DF00837B88 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E85706A729D0BB6600837B88 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D2D9BDD29D61AA5006B78F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E838B01729D0021F00D900BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E838B03329D0085A00D900BF /* FirebaseDatabase in Frameworks */,
+				E838B03129D0085A00D900BF /* FirebaseAuth in Frameworks */,
+				E838B03529D0085A00D900BF /* FirebaseFirestore in Frameworks */,
+				E838B03729D0085A00D900BF /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E838B01129D0021F00D900BF = {
+			isa = PBXGroup;
+			children = (
+				9DC74AA129D4AAEE008BF5F6 /* GoogleService-Info.plist */,
+				E838B01C29D0021F00D900BF /* Parking */,
+				E838B01B29D0021F00D900BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E838B01B29D0021F00D900BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E838B01A29D0021F00D900BF /* Parking.app */,
+				9D2D9BE029D61AA5006B78F2 /* Watchos Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E838B01C29D0021F00D900BF /* Parking */ = {
+			isa = PBXGroup;
+			children = (
+				E838B01D29D0021F00D900BF /* ParkingApp.swift */,
+				E838B02E29D0033100D900BF /* controllers */,
+				E838B02D29D0032300D900BF /* models */,
+				E838B02B29D0028C00D900BF /* views */,
+				E838B02129D0022000D900BF /* Assets.xcassets */,
+				E838B02329D0022000D900BF /* Preview Content */,
+			);
+			path = Parking;
+			sourceTree = "<group>";
+		};
+		E838B02329D0022000D900BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E838B02429D0022000D900BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E838B02B29D0028C00D900BF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9DC74A9F29D4AA27008BF5F6 /* Signup.swift */,
+				9DC74A9D29D4A945008BF5F6 /* ContentView.swift */,
+				E85706A529D0B9DF00837B88 /* MapView.swift */,
+				E85706A729D0BB6600837B88 /* FirstScreen.swift */,
+				E838B01F29D0021F00D900BF /* Home.swift */,
+				9DC74AA329D4C7F1008BF5F6 /* Detailview.swift */,
+				9DC1A80729D54A63007F39D2 /* UserParkings.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E838B02D29D0032300D900BF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E838B03A29D00BD300D900BF /* ParkingSlot.swift */,
+				E838B04029D02C4000D900BF /* SlotLocation.swift */,
+				9DC1A80B29D54ABA007F39D2 /* Parking.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E838B02E29D0033100D900BF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DC74A9B29D4A90B008BF5F6 /* FireAuthHelper.swift */,
+				9DC1A80929D54A8F007F39D2 /* FireDBHelper.swift */,
+				E838B03E29D015AB00D900BF /* ParkingHelper.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D2D9BDF29D61AA5006B78F2 /* Watchos Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2D9BED29D61AA8006B78F2 /* Build configuration list for PBXNativeTarget "Watchos Watch App" */;
+			buildPhases = (
+				9D2D9BDC29D61AA5006B78F2 /* Sources */,
+				9D2D9BDD29D61AA5006B78F2 /* Frameworks */,
+				9D2D9BDE29D61AA5006B78F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watchos Watch App";
+			productName = "Watchos Watch App";
+			productReference = 9D2D9BE029D61AA5006B78F2 /* Watchos Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E838B01929D0021F00D900BF /* Parking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E838B02829D0022000D900BF /* Build configuration list for PBXNativeTarget "Parking" */;
+			buildPhases = (
+				E838B01629D0021F00D900BF /* Sources */,
+				E838B01729D0021F00D900BF /* Frameworks */,
+				E838B01829D0021F00D900BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parking;
+			packageProductDependencies = (
+				E838B03029D0085A00D900BF /* FirebaseAuth */,
+				E838B03229D0085A00D900BF /* FirebaseDatabase */,
+				E838B03429D0085A00D900BF /* FirebaseFirestore */,
+				E838B03629D0085A00D900BF /* FirebaseFirestoreSwift */,
+			);
+			productName = Parking;
+			productReference = E838B01A29D0021F00D900BF /* Parking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E838B01229D0021F00D900BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9D2D9BDF29D61AA5006B78F2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E838B01929D0021F00D900BF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E838B01529D0021F00D900BF /* Build configuration list for PBXProject "Parking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E838B01129D0021F00D900BF;
+			packageReferences = (
+				E838B02F29D0085A00D900BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = E838B01B29D0021F00D900BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E838B01929D0021F00D900BF /* Parking */,
+				9D2D9BDF29D61AA5006B78F2 /* Watchos Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D2D9BDE29D61AA5006B78F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E838B01829D0021F00D900BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E838B02529D0022000D900BF /* Preview Assets.xcassets in Resources */,
+				E838B02229D0022000D900BF /* Assets.xcassets in Resources */,
+				9DC74AA229D4AAEE008BF5F6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D2D9BDC29D61AA5006B78F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E838B01629D0021F00D900BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85706A829D0BB6600837B88 /* FirstScreen.swift in Sources */,
+				9DC74AA029D4AA27008BF5F6 /* Signup.swift in Sources */,
+				9DC1A80C29D54ABA007F39D2 /* Parking.swift in Sources */,
+				E838B04129D02C4000D900BF /* SlotLocation.swift in Sources */,
+				9DC1A80829D54A63007F39D2 /* UserParkings.swift in Sources */,
+				9DC1A80A29D54A8F007F39D2 /* FireDBHelper.swift in Sources */,
+				E85706A629D0B9DF00837B88 /* MapView.swift in Sources */,
+				E838B02029D0021F00D900BF /* Home.swift in Sources */,
+				9DC74AA429D4C7F1008BF5F6 /* Detailview.swift in Sources */,
+				E838B01E29D0021F00D900BF /* ParkingApp.swift in Sources */,
+				9DC74A9E29D4A945008BF5F6 /* ContentView.swift in Sources */,
+				E838B03F29D015AB00D900BF /* ParkingHelper.swift in Sources */,
+				E838B03B29D00BD300D900BF /* ParkingSlot.swift in Sources */,
+				9DC74A9C29D4A90B008BF5F6 /* FireAuthHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9D2D9BEB29D61AA8006B78F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watchos Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = WVLSGY7748;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watchos;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		9D2D9BEC29D61AA8006B78F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watchos Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = WVLSGY7748;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watchos;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		E838B02629D0022000D900BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E838B02729D0022000D900BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E838B02929D0022000D900BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Parking/Preview Content\"";
+				DEVELOPMENT_TEAM = LHAK68788N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harshil.Parking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E838B02A29D0022000D900BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Parking/Preview Content\"";
+				DEVELOPMENT_TEAM = LHAK68788N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harshil.Parking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D2D9BED29D61AA8006B78F2 /* Build configuration list for PBXNativeTarget "Watchos Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2D9BEB29D61AA8006B78F2 /* Debug */,
+				9D2D9BEC29D61AA8006B78F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E838B01529D0021F00D900BF /* Build configuration list for PBXProject "Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E838B02629D0022000D900BF /* Debug */,
+				E838B02729D0022000D900BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E838B02829D0022000D900BF /* Build configuration list for PBXNativeTarget "Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E838B02929D0022000D900BF /* Debug */,
+				E838B02A29D0022000D900BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E838B02F29D0085A00D900BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E838B03029D0085A00D900BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E838B02F29D0085A00D900BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E838B03229D0085A00D900BF /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E838B02F29D0085A00D900BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E838B03429D0085A00D900BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E838B02F29D0085A00D900BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E838B03629D0085A00D900BF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E838B02F29D0085A00D900BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E838B01229D0021F00D900BF /* Project object */;
+}
